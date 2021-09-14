@@ -14,6 +14,10 @@
     </form>
     <section></section>
     <script>
+        const addForm = document.querySelector('form')
+        const nameInput = document.querySelector('input')
+        const container = document.querySelector('section')
+        
         axios.get('/api/spongebob')
             .then((res) => {
                 console.log(res.data)
@@ -21,9 +25,6 @@
             .catch((error) => {
                 console.log(error)
             })
-        const addForm = document.querySelector('form')
-        const nameInput = document.querySelector('input')
-        const container = document.querySelector('section')
 
         function submitHandler(e){
             e.preventDefault()

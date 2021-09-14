@@ -28,7 +28,7 @@ app.listen(port, () => {
 // const students = [];
 
 
-app.get('api/spongebob', (req, res) => {
+app.get('/api/spongebob', (req, res) => {
     try { 
         notAFunction();
     } catch (error) {
