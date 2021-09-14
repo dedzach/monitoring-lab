@@ -1,13 +1,14 @@
 const express = require("expess");
-const { appendFile } = require("fs");
 const path = require("path");
 const Rollbar = require("rollbar");
 
-let rollbar = new Rollbar({
-    accessToken: "fill this in with something later",
-    captureUncaught: true,
-    captureUnhandledRejections: true
-})
+// let rollbar = new Rollbar({
+//     accessToken: "fill this in with something later",
+//     captureUncaught: true,
+//     captureUnhandledRejections: true
+// })
+
+const app = express();
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
