@@ -25,7 +25,7 @@ app.listen(port, () => {
     console.log(`Server up and running on ${port}!`);
 })
 
-const students = [];
+// const students = [];
 
 try { 
     student();
