@@ -30,3 +30,7 @@ try {
 } catch (error) {
     console.error(error);
 }
+
+app.post('api/student', (req, res) => {
+    let {name} = req.body
+})
