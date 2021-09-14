@@ -24,3 +24,9 @@ app.use(rollbar.errorHandler());
 app.listen(port, () => {
     console.log(`Server up and running on ${port}!`);
 })
+
+try {
+    nonExistentFunction();
+} catch (error) {
+    console.error(error);
+}
