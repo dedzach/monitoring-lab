@@ -30,7 +30,7 @@ app.listen(port, () => {
 
 app.get('api/spongebob', (req, res) => {
     try { 
-        students();
+        notAFunction();
     } catch (error) {
         rollbar.error('error');
     }
