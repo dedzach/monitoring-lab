@@ -28,7 +28,7 @@ app.listen(port, () => {
 const students = [];
 
 try { 
-    student();
+    students();
 } catch (error) {
     rollbar.error(error);
 }
