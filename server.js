@@ -25,10 +25,12 @@ app.listen(port, () => {
     console.log(`Server up and running on ${port}!`);
 })
 
-try {
-    nonExistentFunction();
+app.get('/api/')
+
+try { 
+    student();
 } catch (error) {
-    console.error(error);
+    rollbar.error(error);
 }
 
 app.get('/api/student', (req, res)=>{
