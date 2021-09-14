@@ -31,7 +31,7 @@ try {
     console.error(error);
 }
 
-app.post('/api/student', (req, res)=>{
+app.get('/api/student', (req, res)=>{
     let {name} = req.body
     name = name.trim()
 
